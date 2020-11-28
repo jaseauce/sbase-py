@@ -1,0 +1,8 @@
+venv/
+.idea/
+__pycache__
+tests/assets/
+tests/__pycache__
+tests/archived_logs
+tests/latest_logs
+tests/*.log
