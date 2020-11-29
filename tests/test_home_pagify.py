@@ -20,7 +20,7 @@ class HomeTest(HomePage):
         # assert page title
         self.assert_title("Practice E-Commerce Site – Automation Bro")
         # assert logo
-        self.assert_element_visible('HomePage.logo_icon')
+        self.assert_element_visible(HomePage.logo_icon)
 
         # scroll to bottom and assert copyright
         self.scroll_to_bottom()
@@ -31,5 +31,5 @@ class HomeTest(HomePage):
         self.assertIn("shop", self.get_current_url())
 
     def test_menu_links(self):
-        expected_links = ['Home', 'About', 'Shop', 'Blog', 'Contacts']
+        expected_links = ['Home', 'About', 'Shop', 'Blog', 'Contact']
         self.assertEqual(expected_links, self.get_nav_links_text())

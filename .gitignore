@@ -6,3 +6,8 @@ tests/__pycache__
 tests/archived_logs
 tests/latest_logs
 tests/*.log
+allure*
+env/
+latest_logs
+archived_logs
+*.log

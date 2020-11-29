@@ -48,5 +48,5 @@ class CartTest(CartPage):
         # print(self.get_text("td[class='product-subtotal']"))
 
         # assert subtotal to be different than the original subtotal
-        self.wait_for_text("$300.01", self.subtotal_text)
+        self.wait_for_text("$300.00", self.subtotal_text)
         self.assertNotEqual(text, self.get_text(self.subtotal_text))
